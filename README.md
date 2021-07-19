@@ -1,0 +1,2 @@
+# django-pharma
+Pharma Project 
