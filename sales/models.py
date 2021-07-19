@@ -7,7 +7,7 @@ from django.utils.timezone import now
 
 class Order(models.Model):
     Order_Id = models.IntegerField()
-    Transaction_id = models.PositiveBigIntegerField() 
+    Transaction_id = models.IntegerField() 
     PJPoutlet = models.IntegerField(blank=True)
     Order_Date = models.DateField()
     Order_Time = models.TimeField()
@@ -61,5 +61,5 @@ class Order(models.Model):
     class Meta:
       unique_together = ('Order_Id', 'skuid',)
     def __str__(self):
-        return self.gd1
+        return self.Outlet_Name
 
